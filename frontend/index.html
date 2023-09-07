@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>YouTube Downloader</h1>
+    </header>
+    <main>
+        <form id="download-form">
+            <label for="video-url">Insira o link do YouTube:</label>
+            <input type="text" id="video-url" name="video-url" required>
+            
+            <label>Escolha o que deseja baixar:</label>
+            <div class="button-container">
+                <button type="button" id="baixar-video">Baixar Vídeo</button>
+                <button type="button" id="baixar-audio">Baixar Áudio</button>
+            </div>
+
+            <div id="format-container" style="display: none;">
+                <label for="format">Escolha o formato:</label>
+                <select id="format" name="format">
+                    <option value="mp3">MP3</option>
+                    <option value="wav">WAV</option>
+                    <option value="mp4">MP4</option>
+                    <option value="mkv">MKV</option>
+                </select>
+            </div>
+
+            <button type="submit">Download</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 YouTube Downloader - Dev: Ylanna</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
